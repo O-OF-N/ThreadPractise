@@ -1,6 +1,15 @@
 ThreadPractise
 ==============
 
+ExecutorService:
+This is an interface that extends the Executor interface. It provides a few convenience methods like Submit(runnable) and submit(callable) 
+unlike its parent which only offers execute(Runnable).
+
+Executors:
+This is just an implementation of ThreadPoolExecutor class. The ThreadPoolExecutor class is a really complex implementation
+of ExecutorService class. The problem with this is class is its giant constructor which confuses the user. The advantage
+of Executors class is that it provides very convenient static methods.  
+
 ArrayBlockingQueue:
 Array blocking queue is just an array implementation of a blocking queue. The push method is used to add a value to the queue.
 The take method is used to block the thread until an element in the queue becomes available.
